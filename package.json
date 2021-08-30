@@ -9,8 +9,14 @@
     "build": "rimraf ./dist && tsc",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
+    "prettier-format": "prettier --config .prettierrc './**/*.ts' --write",
     "start": "pnpm build && node dist/index.js",
     "test": "jest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm run prettier-format && pnpm run lint"
+    }
   },
   "keywords": [
     "Nodejs",
@@ -19,12 +25,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shopify/eslint-plugin": "^40.4.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.6",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-shopify": "^35.1.0",
+    "husky": "^7.0.2",
     "jest": "^27.1.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",

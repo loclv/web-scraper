@@ -1,13 +1,22 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@shopify/esnext",
+    "plugin:@shopify/typescript",
+    "plugin:@shopify/typescript-type-checking",
+    "plugin:@shopify/node",
+    "prettier"
   ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
   "rules": {
+    "prettier/prettier": 2,
     "no-console": 1
   }
 }
