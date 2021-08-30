@@ -5,6 +5,7 @@ TypeScript Node.js Project.
 ## 🌠 Using
 
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager
+- [Jest](https://jestjs.io/) - a delightful Testing Framework with a focus on simplicity.
 
 ```sh
 curl -fsSL https://get.pnpm.io/install.sh | sh -
@@ -34,10 +35,14 @@ pnpm i
 # 🧑🏿‍💻 Development: serve with hot reload
 pnpm dev
 
+pnpm lint
+pnpm test
+
 # Compile and transpile the TypeScript code:
 pnpm build
 
 # Compile and transpile the TypeScript code, and then runs the resulting `.js` application:
+# Starts the app in production
 pnpm start
 ```
 
