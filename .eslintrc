@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier", "jest"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -10,6 +10,7 @@
     "plugin:@shopify/typescript",
     "plugin:@shopify/typescript-type-checking",
     "plugin:@shopify/node",
+    "plugin:jest/recommended",
     "prettier"
   ],
   "parserOptions": {
@@ -18,6 +19,11 @@
   },
   "rules": {
     "prettier/prettier": 2,
-    "no-console": 1
+    "no-console": 1,
+    "jest/no-disabled-tests": 1,
+    "jest/no-focused-tests": 2,
+    "jest/no-identical-title": 2,
+    "jest/prefer-to-have-length": 1,
+    "jest/valid-expect": 2
   }
 }
