@@ -12,7 +12,8 @@
     "prettier-format": "prettier --config .prettierrc './**/*.ts' --write",
     "start": "pnpm build && node dist/index.js",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [
     "Nodejs",
