@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-env': ^7.15.4
   '@babel/preset-typescript': ^7.15.0
   '@shopify/eslint-plugin': ^40.4.0
+  '@tsconfig/node16': ^1.0.2
   '@types/jest': ^27.0.1
   '@types/node': ^16.7.10
   '@typescript-eslint/eslint-plugin': ^4.30.0
@@ -33,6 +34,7 @@ devDependencies:
   '@babel/preset-env': 7.15.4_@babel+core@7.15.5
   '@babel/preset-typescript': 7.15.0_@babel+core@7.15.5
   '@shopify/eslint-plugin': 40.4.0_65e5083c1b6f8958cc4401a94972c8ef
+  '@tsconfig/node16': 1.0.2
   '@types/jest': 27.0.1
   '@types/node': 16.7.10
   '@typescript-eslint/eslint-plugin': 4.30.0_8a8a2d3eaa9257455a03c16dce5f55b3

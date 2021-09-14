@@ -23,8 +23,6 @@ If you are using [nvm](https://github.com/nvm-sh/nvm#nvmrc):
 nvm use
 ```
 
-Using node `v16.8.0`.
-
 Set your environment variable in `.env` file.
 
 ## 🧑🏿‍💻 Build Setup
