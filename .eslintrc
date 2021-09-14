@@ -20,6 +20,22 @@
   "rules": {
     "prettier/prettier": 2,
     "no-console": 1,
+    "no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/no-empty-interface": 2,
+    "@typescript-eslint/naming-convention": [
+      2,
+      {
+        "selector": "interface",
+        "format": ["StrictPascalCase"]
+      },
+      {
+        "selector": "variable",
+        "format": ["strictCamelCase", "UPPER_CASE", "snake_case"]
+      }
+    ],
+    "no-shadow": 0,
+    "@typescript-eslint/no-shadow": 2,
     "jest/no-disabled-tests": 1,
     "jest/no-focused-tests": 2,
     "jest/no-identical-title": 2,
