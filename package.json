@@ -38,6 +38,7 @@
     "eslint-plugin-shopify": "^35.1.0",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
+    "lint-staged": ">=10",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
@@ -47,5 +48,9 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.ts": "eslint --cache --fix"
   }
 }
