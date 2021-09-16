@@ -1,6 +1,7 @@
 node_modules
 coverage
-mock
+
+src
 
 npm-debug.log
 Dockerfile*
@@ -15,7 +16,10 @@ docker-compose*
 .nvmrc
 .prettierrc
 
+babel.config.ts
 jest.config.ts
+nodemon.json
+tsconfig.json
 
 README.md
 LICENSE

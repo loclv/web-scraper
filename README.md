@@ -52,6 +52,14 @@ If you want to run Unit tests every time you commit code, you can add `pnpm test
 
 ### Deployment
 
+In develop environment, build first:
+
+```sh
+pnpm build
+```
+
+In production environment, install dependencies and run builded source:
+
 ```sh
 pnpm i --production --quiet
 pnpm prod
