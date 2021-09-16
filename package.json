@@ -9,11 +9,12 @@
   },
   "scripts": {
     "dev": "nodemon",
-    "build": "rimraf ./dist && tsc",
+    "postbuild": "ef-tspm",
+    "build": "rimraf ./dist && tsc && ef-tspm",
     "lint": "eslint --cache ./src --ext .ts",
     "lint-and-fix": "eslint --cache ./src --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc './src/**/*.ts' --write",
-    "start": "ts-node src/index",
+    "start": "ts-node -r tsconfig-paths/register src/index",
     "prod": "node dist/index.js",
     "test": "jest",
     "prepare": "husky install",
@@ -24,6 +25,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-typescript": "^7.15.0",
+    "@ef-carbon/tspm": "^2.2.5",
     "@shopify/eslint-plugin": "^40.4.0",
     "@tsconfig/node16": "^1.0.2",
     "@types/jest": "^27.0.1",
@@ -44,6 +46,7 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.2"
   },
   "dependencies": {
