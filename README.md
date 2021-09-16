@@ -17,10 +17,10 @@ Expected output: version >= `6.14.5`.
 
 ## 🏔️ Environment
 
-If you are using [nvm](https://github.com/nvm-sh/nvm#nvmrc):
+If you are using [fnm - Node.js version manager](https://github.com/Schniz/fnm):
 
 ```sh
-nvm use
+fnm use
 ```
 
 Set your environment variable in `.env` file.
