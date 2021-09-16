@@ -81,6 +81,7 @@ The `mock` directory contains your JSON mock data for testing purposes.
 - 🐋 [Better DockerFile Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-dockerfile-syntax)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [markdown lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [sonar lint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
 
 Options:
 
