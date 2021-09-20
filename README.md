@@ -67,7 +67,19 @@ pnpm prod
 
 ## 🏘️ Special Directories
 
-### `mock`
+## `media`
+
+The `media` directory is used to store supporting files for the application.
+Things like requirement documentation, text outlines, etc.
+This is the junk drawer for the project.
+
+### `src`
+
+#### `data`
+
+The `data` directory holds the types (models/entities) and services (repositories) for data consumed by the application.
+
+#### `mock`
 
 The `mock` directory contains your JSON mock data for testing purposes.
 

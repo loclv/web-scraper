@@ -1,25 +1,31 @@
 node_modules
 coverage
+media
 
+# typescript src
 src
 
-npm-debug.log
+babel.config.js
+jest.config.ts
+tsconfig.json
+nodemon.json
+
+*.log
 Dockerfile*
 docker-compose*
 .dockerignore
 
-.git
-.gitignore
-.eslintrc
-.eslintignore
-.env.development
-.nvmrc
-.prettierrc
+# .git
+# .gitignore
+# .eslintrc
+# .eslintignore
+# .env.development
+# .nvmrc
+# .prettierrc
+.*
+!.env
 
-babel.config.ts
-jest.config.ts
-nodemon.json
-tsconfig.json
+docker-entrypoint.sh
 
 README.md
 LICENSE
