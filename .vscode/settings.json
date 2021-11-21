@@ -3,6 +3,7 @@
     "dockerignore",
     "pnpm",
     "preinstall",
-    "prettierrc"
+    "prettierrc",
+    "tscpaths"
   ]
 }

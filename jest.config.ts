@@ -3,6 +3,9 @@
  * https://jestjs.io/docs/configuration
  */
 
+const { pathsToModuleNameMapper } = require('ts-jest/utils');
+const { compilerOptions } = require('./tsconfig');
+
 export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -74,7 +77,11 @@ export default {
   moduleFileExtensions: ['ts', 'js', 'json'],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  // moduleNameMapper: {},
+  moduleNameMapper: {
+    ...pathsToModuleNameMapper(compilerOptions.paths, {
+      prefix: '<rootDir>/src',
+    }),
+  },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
