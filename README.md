@@ -1,8 +1,8 @@
-# TypeScript Node.js Template Project
+# blog html scraper - blog migration
 
 TypeScript Node.js Project.
 
-## 🌠 Using
+## ✨ Using
 
 - [pnpm](https://pnpm.io/) - Fast, disk space efficient package manager.
 - [TypeScript](https://www.typescriptlang.org/) - a strongly typed programming language.
