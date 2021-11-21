@@ -1,7 +1,8 @@
-import * as dotenv from 'dotenv';
+import { startBrowser } from './browser';
+import { scrapeAll } from './page-controller';
 
-dotenv.config();
+// Start the browser and create a browser instance
+const browserInstance = startBrowser();
 
-console.log('🌄 Hello!');
-
-console.log('DB_USER: ', process.env.DB_USER);
+// Pass the browser instance to the scraper controller
+scrapeAll(browserInstance);
