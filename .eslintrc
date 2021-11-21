@@ -22,6 +22,16 @@
     "prettier/prettier": 2,
     "no-console": 1,
     "no-unused-vars": 0,
+    "default-case": 2,
+    "max-lines": [2, 400],
+    "max-len": [
+      2,
+      {
+        "code": 120
+      }
+    ],
+    "no-else-return": 2,
+    "max-lines-per-function": [2, 255],
     "@typescript-eslint/no-unused-vars": 2,
     "@typescript-eslint/no-empty-interface": 2,
     "@typescript-eslint/naming-convention": [
@@ -33,6 +43,17 @@
       {
         "selector": "variable",
         "format": ["strictCamelCase", "UPPER_CASE", "snake_case"]
+      },
+      {
+        "selector": "typeParameter",
+        "format": ["PascalCase"],
+        "prefix": ["T"]
+      },
+      {
+        "selector": "variable",
+        "types": ["boolean"],
+        "format": ["PascalCase"],
+        "prefix": ["is", "should", "has", "can", "did", "will"]
       }
     ],
     "no-shadow": 0,
