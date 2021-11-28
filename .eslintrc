@@ -20,7 +20,7 @@
   },
   "rules": {
     "prettier/prettier": 2,
-    "no-console": 1,
+    "no-console": 0,
     "no-unused-vars": 0,
     "default-case": 2,
     "max-lines": [2, 400],

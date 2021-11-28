@@ -1,19 +1,20 @@
-import * as dotenv from 'dotenv';
-import puppeteer from 'puppeteer';
+import puppeteer, { Browser } from 'puppeteer';
 
-dotenv.config();
-
-console.log('🌄 Hello!');
-
-console.log('DB_USER: ', process.env.DB_USER);
-
-export const startBrowser = async () => {
+export const startBrowser = async (): Promise<Browser | undefined> => {
   let browser;
   try {
     console.log('Opening the browser......');
     browser = await puppeteer.launch({
-      headless: false,
-      args: ['--disable-setuid-sandbox'],
+      headless: true,
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage',
+        '--disable-accelerated-2d-canvas',
+        '--no-first-run',
+        '--no-zygote',
+        '--disable-gpu',
+      ],
       ignoreHTTPSErrors: true,
     });
   } catch (err) {
