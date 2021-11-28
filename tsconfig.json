@@ -17,7 +17,7 @@
       "@json/*": ["mock/json/*"]
     },
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "@types/jest"],
+    "types": ["node", "dom", "@types/jest"],
     "resolveJsonModule": true,
     "declaration": false,
     "sourceMap": true,
